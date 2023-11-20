@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+	<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' />
+	<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+	<header class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ElevenPage</a>
+			</div>
+			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="/register">Register</a></li>
+					<li><a href="/login">Sign up</a></li>
+				</ul>
+			</nav><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</header>
+
+	<div class="container">
+		<h2><%= title %></h2>
+		<form class="form-horizontal" action="/register" method="get"> <!-- TODO: Sobra el form. Incluir solamente un botón de volver atrás -->
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+                    <p class="form-control-static"><%= email %></p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Username</label>
+				<div class="col-sm-10">
+                    <p class="form-control-static"><%= username %></p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Gender</label>
+				<div class="col-sm-2">
+                    <p class="form-control-static"><%= gender %></p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Address</label>
+				<div class="col-sm-10">
+                    <p class="form-control-static"><%= address %></p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">Back</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<footer class="footer">
+        <div class="container">
+            <p class="text-center">
+            </p>
+        </div>
+	</footer>
+	
+	
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+  </body>
+</html>

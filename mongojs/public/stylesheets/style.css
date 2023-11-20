@@ -1,0 +1,37 @@
+/* Google Fonts */
+
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Indie Flower', cursive;
+}
+
+/* Estilos personalizados realizados por Juan Jesús Gómez Noya */
+
+body > .container {
+  margin-top: 100px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.footer p {
+  line-height: 40px;
+  margin: 0;
+}

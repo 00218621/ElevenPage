@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+	<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' />
+	<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<style>
+		#username {
+		  font-family: 'Roboto', sans-serif;
+		  font-size: 18px;
+          color: cornflowerblue;    
+		}
+	  </style>  
+</head>
+  <body>
+
+	<header class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ElevenPage</a>
+			</div>
+			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+											 		
+					<li><a href="/logout">Logout</a></li>
+					<li>
+						<a id = "username">
+							Bienvenido <%= user.role %> <%= user.username %>
+						</a>
+					</li>
+				</ul>
+			</nav><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</header>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-12 col-md-6"> <!-- Ajusta el tamaño de las columnas según sea necesario -->
+			
+			</div>
+		</div>
+	</div>
+	
+
+	<footer class="footer">
+        <div class="container">
+            <p class="text-center">
+            </p>
+        </div>
+	</footer>
+	
+	
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Usuario</title>
+    <!-- Incluye aquí tus archivos CSS -->
+</head>
+<body>
+    <h2>Editar Usuario</h2>
+    <form action="/update-user/<%= user._id %>" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= user.email %>" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="<%= user.username %>" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" value="<%= user.address %>">
+
+        <!-- Añade aquí más campos si es necesario -->
+
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>
